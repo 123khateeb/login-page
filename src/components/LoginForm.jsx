@@ -27,7 +27,7 @@ const LoginForm = () => {;
         <h2 className="mb-3">Login Form</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group mb-2 row">
-            <label className="form-label col-lg-3">Drowpdown 1</label>
+            <label className="form-label col-sm-3 col-md-3 col-lg-3 label1" >Drowpdown 1</label>
             <select className=" form-control col auto" value={dropdown1} onChange={handleChange1}>
               <option value={0}>none</option>
               <option value={1}>1st item</option>
@@ -37,7 +37,7 @@ const LoginForm = () => {;
             </select>
           </div>
           <div className="form-group mb-2 row">
-            <label className="form-label col-lg-3">Drowpdown 2</label>
+            <label className="form-label col-sm-3 col-md-3 col-lg-3">Drowpdown 2</label>
             <select className="form-control col auto" value={dropdown2} onChange={handleChange2}>
               <option value={0}>none</option>
               <option value={1}>Name 1</option>
@@ -47,7 +47,7 @@ const LoginForm = () => {;
             </select>
           </div>
           <div className="form-group mb-2 row">
-            <label className="form-label col-lg-3">Password</label>
+            <label className="form-label col-sm-3 col-md-3 col-lg-3">Password</label>
             <input type="password" className="form-control col auto" value={password} onChange={(e) => setPassword(e.target.value)}></input>
           </div>
           <button type="submit" className="btn btn-success w-100 mt-2" disabled={!validateForm()}>
