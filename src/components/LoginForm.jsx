@@ -26,29 +26,29 @@ const LoginForm = () => {;
       <div className="loginform rounded">
         <h2 className="mb-3">Login Form</h2>
         <form onSubmit={handleSubmit}>
-          <div className="form-group mb-2">
-            <label className="form-label">Drowpdown 1</label>
-            <select className=" form-control" value={dropdown1} onChange={handleChange1}>
-              <option>none</option>
+          <div className="form-group mb-2 row">
+            <label className="form-label col-lg-3">Drowpdown 1</label>
+            <select className=" form-control col auto" value={dropdown1} onChange={handleChange1}>
+              <option value={0}>none</option>
               <option value={1}>1st item</option>
               <option value={2}>2nd item</option>
               <option value={3}>3rd item</option>
               <option value={4}>4th item</option>
             </select>
           </div>
-          <div className="form-group mb-2">
-            <label className="form-label ">Drowpdown 2</label>
-            <select className="form-control " value={dropdown2} onChange={handleChange2}>
-              <option>none</option>
+          <div className="form-group mb-2 row">
+            <label className="form-label col-lg-3">Drowpdown 2</label>
+            <select className="form-control col auto" value={dropdown2} onChange={handleChange2}>
+              <option value={0}>none</option>
               <option value={1}>Name 1</option>
               <option value={2}>Name 2</option>
               <option value={3}>Name 3</option>
               <option value={4}>Name 4</option>
             </select>
           </div>
-          <div className="form-group mb-2">
-            <label className="form-label">Password</label>
-            <input type="password" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+          <div className="form-group mb-2 row">
+            <label className="form-label col-lg-3">Password</label>
+            <input type="password" className="form-control col auto" value={password} onChange={(e) => setPassword(e.target.value)}></input>
           </div>
           <button type="submit" className="btn btn-success w-100 mt-2" disabled={!validateForm()}>
             Log In

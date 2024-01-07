@@ -10,3 +10,9 @@
     color: black;
     background-color: rgb(238, 241, 243);
 }
+select {
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
